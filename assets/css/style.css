@@ -40,18 +40,6 @@ img {
     max-width: 100%;
 }
 
-.player {
-    background-color: var(--footer);
-    width: 100%;
-    height: 100px;
-}
-
-.sidebar {
-    height: 100%;
-    width: 15vw;
-    background-color: var(--sidebar);
-}
-
 .content {
     height: 100%;
     width: 100%;
@@ -81,11 +69,48 @@ img {
     margin-top: 0.5rem;
 }
 
+.debug .playlist {
+    background-color: #505050;
+    width: 100%;
+    height: 300px;
+    margin-top: 2rem;
+}
+
+.debug .user {
+    background-color: #505050;
+    width: 100%;
+    height: 90px;
+    margin-top: 5rem;
+}
+
+.debug .control-left {
+    background-color: #505050;
+    width: 200px;
+    height: 50px;
+}
+
+.debug .player {
+    background-color: #505050;
+    width: 350px;
+    height: 50px;
+}
+
+.debug .control-right {
+    background-color: #505050;
+    width: 200px;
+    height: 50px;
+}
 
 /* #endregion debug */
 
 
 /* #region sidebar */
+
+.sidebar {
+    height: 100%;
+    width: 15vw;
+    background-color: var(--sidebar);
+}
 
 .logo {
     width: 100px;
@@ -97,3 +122,17 @@ img {
 }
 
 /* #endregion sidebar */
+
+
+/* #region down_menu */
+
+.menu_control {
+    background-color: var(--footer);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #endregion down_menu */
