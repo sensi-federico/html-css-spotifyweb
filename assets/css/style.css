@@ -17,6 +17,7 @@
 
 .viewport {
     height: calc(100vh - 100px);
+    display: flex;
 }
 
 .container {
@@ -33,5 +34,24 @@
 img {
     max-width: 100%;
 }
+
+.player {
+    background-color: var(--footer);
+    width: 100%;
+    height: 100px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 15vw;
+    background-color: yellow;
+}
+
+.content {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+
 
 /* #endregion utilities */
