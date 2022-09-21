@@ -15,5 +15,23 @@
     --white: #ffffff;
 }
 
+.viewport {
+    height: calc(100vh - 100px);
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+}
 
 /* #endregion utilities */
