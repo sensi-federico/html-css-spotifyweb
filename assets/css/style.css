@@ -1,0 +1,19 @@
+/* #region utilities */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sidebar: #000000;
+    -back: #141922;
+    --footer: #282828;
+    --font: #606060;
+    --details: #ADFF2F;
+    --white: #ffffff;
+}
+
+
+/* #endregion utilities */
