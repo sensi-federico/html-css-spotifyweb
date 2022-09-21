@@ -25,6 +25,11 @@
     margin: auto;
 }
 
+.container_slim {
+    max-width: 80%;
+    margin: auto;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -44,14 +49,51 @@ img {
 .sidebar {
     height: 100%;
     width: 15vw;
-    background-color: yellow;
+    background-color: var(--sidebar);
 }
 
 .content {
-    background-color: blue;
     height: 100%;
     width: 100%;
 }
 
 
 /* #endregion utilities */
+
+
+/* #region debug */
+
+.debug .content {
+    background-color: blue;
+}
+
+.debug .icons {
+    background-color: #606060;
+    width: 60px;
+    height: 100px;
+    margin-top: 0.5rem;
+}
+
+.debug .icon_text {
+    background-color: #505050;
+    width: 100%;
+    height: 100px;
+    margin-top: 0.5rem;
+}
+
+
+/* #endregion debug */
+
+
+/* #region sidebar */
+
+.logo {
+    width: 100px;
+    margin-top: 0.5rem;
+}
+
+.menu {
+    display: flex;
+}
+
+/* #endregion sidebar */
