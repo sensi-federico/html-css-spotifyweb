@@ -8,11 +8,13 @@
 
 :root {
     --sidebar: #000000;
-    -back: #141922;
-    --footer: #282828;
+    --back: #141922;
+    --footer: #252525;
     --font: #606060;
     --details: #ADFF2F;
     --white: #ffffff;
+    --banner: #080B12;
+
 }
 
 .viewport {
@@ -45,6 +47,23 @@ img {
     width: 100%;
 }
 
+.banner {
+    background-color: var(--banner);
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn_upgrade {
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 3rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+
 
 /* #endregion utilities */
 
@@ -52,7 +71,7 @@ img {
 /* #region debug */
 
 .debug .content {
-    background-color: blue;
+    background-color: var(--back);
 }
 
 .debug .icons {
