@@ -32,6 +32,10 @@
     margin: auto;
 }
 
+.container-flex {
+    display: flex;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -124,6 +128,13 @@ img {
     height: 150px;
 }
 
+.debug .round {
+    background-color: #505050;
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
 .debug h2 {
     color: white;
 }
@@ -146,7 +157,7 @@ img {
 
 .menu {
     display: flex;
-} 
+}
 
 /* #endregion sidebar */
 
@@ -156,6 +167,8 @@ img {
 .content {
     height: 100%;
     width: 100%;
+    flex: 1;
+    overflow: auto;
 }
 
 .menu_content a {
@@ -196,8 +209,3 @@ img {
 }
 
 /* #endregion down_menu */
-
-
-
-
-
