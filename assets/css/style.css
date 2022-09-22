@@ -30,6 +30,9 @@
 .container_slim {
     max-width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container-flex {
@@ -59,6 +62,16 @@ img {
     color: white;
 }
 
+.fs-15 {
+    font-size: 15px;
+    color: white;
+}
+
+.fs-20 {
+    font-size: 20px;
+    color: white;
+}
+
 .padding {
     padding: 1rem;
 }
@@ -72,40 +85,40 @@ img {
     background-color: var(--back);
 }
 
-.debug .icons {
+/* .debug .icons {
     background-color: #606060;
     width: 60px;
     height: 100px;
     margin-top: 0.5rem;
-}
+} */
 
-.debug .icon_text {
+/* .debug .icon_text {
     background-color: #505050;
     width: 100%;
     height: 100px;
     margin-top: 0.5rem;
-}
+} */
 
-.debug .playlist {
+/* .debug .playlist {
     background-color: #505050;
     width: 100%;
     height: 300px;
     margin-top: 2rem;
-}
+} */
 
-.debug .user {
+/* .debug .user {
     background-color: #505050;
     width: 100%;
     height: 90px;
     margin-top: 5rem;
-}
+} */
 
-.debug .control-left {
+/* .debug .control-left {
     background-color: #505050;
     width: 200px;
     height: 50px;
     margin-left: 1.2rem;
-}
+} */
 
 /* .debug .player {
     background-color: #505050;
@@ -164,6 +177,73 @@ img {
 
 .menu {
     display: flex;
+}
+
+.icons {
+    padding-top: 0.5rem;
+    color: var(--font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-house {
+    color: white;
+}
+
+.icon_text {
+    padding-top: 0.7rem;
+    color: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.t-top{
+    color: white;
+}
+
+.border-l {
+    border-left: 2px solid var(--details);
+}
+
+.playlist {
+    color: var(--font);
+    padding-top: 2rem;
+}
+
+.playlist p {
+    color: var(--font);
+    line-height: 1.7rem;
+    padding-left: 0.6em;
+}
+
+.add-playlist {
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.add-playlist h3 {
+    color: var(--font);
+}
+
+.fa-plus {
+    background-color: #505050;
+    padding: 0.7rem;
+    font-size: 20px;
+    color: #080B12;
+}
+
+.user {
+    color: var(--font);
+    margin-top: 170px;
+}
+
+.user-top,
+.user-down {
+    display: flex;
+    align-items: center;
 }
 
 /* #endregion sidebar */
@@ -251,7 +331,15 @@ img {
     border: 1px solid white;
     border-radius: 50%;
     padding: 4px;
+}
 
+.control-left {
+    display: flex;
+    margin-left: 1.2rem;
+}
+
+.sinister {
+    width: 20%;
 }
 
 /* #endregion down_menu */
