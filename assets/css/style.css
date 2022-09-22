@@ -80,6 +80,7 @@ img {
     padding: 1rem;
 }
 
+
 /* #endregion utilities */
 
 
@@ -284,6 +285,11 @@ img {
     font-weight: bold;
 }
 
+.menu_content a:first-child {
+    border-bottom: 2px solid var(--details);
+    padding-bottom: 0.5rem;
+}
+
 .banner {
     background-color: var(--banner);
     height: 50px;
@@ -301,9 +307,21 @@ img {
     margin-right: 1rem;
 }
 
-.block {
-    width: 100%;
+.card img {
+    width: auto;
     height: 150px;
+}
+
+.card .title {
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 13px;
+}
+
+.card h6 {
+    color: var(--font);
+    text-align: center;
 }
 
 .round img {
