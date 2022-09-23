@@ -363,7 +363,7 @@ h2 {
     scale: 1.09;
 }
 
-.card {
+/* .card {
     position: relative;
 }
 
@@ -385,7 +385,7 @@ h2 {
 
 .overlay:hover {
     opacity: 1;
-}
+} */
 
 
 .card img {
