@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
 }
 
@@ -57,6 +57,18 @@ img {
     width: calc((100% / 12) * 2);
 }
 
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+
 .col-12 {
     width: calc((100% / 12) * 12);
 }
@@ -77,7 +89,16 @@ img {
 }
 
 .padding {
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+.padding-l {
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    color: white;
 }
 
 
@@ -90,46 +111,46 @@ img {
     background-color: var(--back);
 }
 
-/* .debug .icons {
+.debug .icons {
     background-color: #606060;
     width: 60px;
     height: 100px;
     margin-top: 0.5rem;
-} */
+}
 
-/* .debug .icon_text {
+.debug .icon_text {
     background-color: #505050;
     width: 100%;
     height: 100px;
     margin-top: 0.5rem;
-} */
+}
 
-/* .debug .playlist {
+.debug .playlist {
     background-color: #505050;
     width: 100%;
     height: 300px;
     margin-top: 2rem;
-} */
+}
 
-/* .debug .user {
+.debug .user {
     background-color: #505050;
     width: 100%;
     height: 90px;
     margin-top: 5rem;
-} */
+}
 
-/* .debug .control-left {
+.debug .control-left {
     background-color: #505050;
     width: 200px;
     height: 50px;
     margin-left: 1.2rem;
-} */
+}
 
-/* .debug .player {
+.debug .player {
     background-color: #505050;
     width: 350px;
     height: 50px;
-} */
+}
 
 .debug .control-right {
     background-color: #505050;
@@ -138,27 +159,27 @@ img {
     margin-right: 1.2rem;
 }
 
-/* .debug .menu_content {
+.debug .menu_content {
     background-color: #505050;
     height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-} */
+}
 
-/* .debug .block {
+.debug .block {
     background-color: #505050;
     width: 100%;
     height: 150px;
-} */
+}
 
-/* .debug .round {
+.debug .round {
     background-color: #505050;
     width: 100%;
     height: 150px;
     border-radius: 50%;
-} */
+}
 
 .debug h2 {
     color: white;
@@ -221,6 +242,13 @@ img {
     color: var(--font);
     line-height: 1.7rem;
     padding-left: 0.6em;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist a {
+    text-decoration: none;
+    color: var(--font);
 }
 
 .add-playlist {
@@ -264,7 +292,9 @@ img {
 
 /* #region content */
 
+
 .content {
+    background-color: var(--back);
     height: 100%;
     width: 100%;
     flex: 1;
@@ -276,6 +306,9 @@ img {
     justify-content: center;
     align-items: center;
     margin: 1rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 4rem;
 }
 
 .menu_content a {
@@ -285,7 +318,7 @@ img {
     font-weight: bold;
 }
 
-.menu_content a:first-child {
+.menu_content .border-b {
     border-bottom: 2px solid var(--details);
     padding-bottom: 0.5rem;
 }
@@ -296,6 +329,9 @@ img {
     display: flex;
     justify-content: end;
     align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 85%;
 }
 
 .btn_upgrade {
@@ -308,8 +344,7 @@ img {
 }
 
 .card img {
-    width: auto;
-    height: 150px;
+    width: 100%;
 }
 
 .card .title {
@@ -325,9 +360,15 @@ img {
 }
 
 .round img {
-    width: 100%;
-    height: 150px;
+    width: auto;
+    height: 180px;
     border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.col-12 h6 {
+    color: var(--font);
 }
 
 /* #endregion content */
@@ -339,18 +380,16 @@ img {
     background-color: var(--footer);
     width: 100%;
     height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .player-bar {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .player-bar .bar {
-    width: 350px;
+    width: 40%;
     height: 5px;
     background-color: black;
     border-radius: 1rem;
@@ -358,7 +397,7 @@ img {
 }
 
 .player-bar .bar .bar-wh {
-    width: 100px;
+    width: 20%;
     height: 5px;
     background-color: white;
     border-radius: 1rem;
@@ -385,6 +424,9 @@ img {
 .control-left {
     display: flex;
     margin-left: 1.2rem;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
 }
 
 .sinister {
