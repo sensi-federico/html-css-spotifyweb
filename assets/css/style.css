@@ -202,6 +202,12 @@ h2 {
     margin-top: 0.5rem;
 }
 
+.logo_small {
+    width: 40px;
+    margin-top: 0.5rem;
+    display: none;
+}
+
 .menu {
     display: flex;
 }
@@ -478,7 +484,7 @@ h2 {
 }
 
 .song{
-    width:80px;
+    width: 75px;
     padding-top: 0.5rem;
     padding-right: 1rem;
 }
@@ -584,6 +590,14 @@ h2 {
 
     .bar-right, .bar-w-right {
         display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo_small {
+        display: block;
     }
 
 }
