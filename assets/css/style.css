@@ -36,12 +36,12 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .container-flex {
     display: flex;
 }
+
 
 .row {
     display: flex;
@@ -100,6 +100,7 @@ img {
 h2 {
     color: white;
 }
+
 
 
 /* #endregion utilities */
@@ -246,9 +247,13 @@ h2 {
     flex-direction: column;
 }
 
-.playlist a {
+.sidebar a {
     text-decoration: none;
     color: var(--font);
+}
+
+.sidebar a:hover {
+    color: white;
 }
 
 .add-playlist {
@@ -317,6 +322,10 @@ h2 {
     margin-right: 1rem;
     font-weight: bold;
 }
+.menu_content a:hover{
+    color: white;
+}
+
 
 .menu_content .border-b {
     border-bottom: 2px solid var(--details);
@@ -343,9 +352,42 @@ h2 {
     margin-right: 1rem;
 }
 
+.btn_upgrade:hover {
+    scale: 1.09;
+}
+
+/* .card {
+    position: relative;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 4;
+    opacity: 0;
+    max-width: 100%;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
 .card img {
     width: 100%;
-}
+} */
+
 
 .card .title {
     color: white;
@@ -414,7 +456,7 @@ h2 {
     margin: 0.5rem;
 }
 
-.fa-play {
+.circle-play {
     font-size: 20px;
     border: 1px solid white;
     border-radius: 50%;
@@ -423,14 +465,63 @@ h2 {
 
 .control-left {
     display: flex;
-    margin-left: 1.2rem;
+    margin-left: 1rem;
     justify-content: left;
     align-items: center;
-    width: 100%;
+    margin-top: 0.5rem;
 }
 
-.sinister {
-    width: 20%;
+.control-right {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.song{
+    width:80px;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+}
+
+.song-info h5 {
+    color: white;
+}
+
+.song-info h6 {
+    color: var(--font);
+    padding-top: 0.2rem;
+}
+
+.icons-left {
+    color: var(--font);
+    padding-left: 1.5rem;
+}
+
+.icons-left .fa-heart:hover, .icons-left .fa-folder:hover {
+    color: white;
+}
+
+.bar-right {
+    width: 40%;
+    height: 5px;
+    background-color: black;
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+
+.bar-w-right {
+    width: 70%;
+    height: 5px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.control-right i {
+    color: var(--font);
+}
+
+.control-right i:hover {
+    color: white;
 }
 
 /* #endregion down_menu */
@@ -443,6 +534,10 @@ h2 {
     .col-2 {
         width: calc((100% / 12) * 3);
     }
+
+    .icon_text {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -450,6 +545,47 @@ h2 {
     .col-2 {
         width: calc((100% / 12) * 4);
     }
+
+    .add-playlist h3{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    
+    .playlist {
+        display: none;
+    }
+
+    .user {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .control-left .song-info {
+        display: none;
+    }
+
+    .col-2 {
+        width: calc((100% / 12) * 6);
+    }
+
+    .icon_text {
+        display: none;
+    }
+
+    .icons {
+        scale: 150%;
+        margin-top: 1rem;
+    }
+
+    .bar-right, .bar-w-right {
+        display: none;
+    }
+
 }
 
 
